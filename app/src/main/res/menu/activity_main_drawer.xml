@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Dashboard"
+    android:title="DashBoard"
+    android:icon="@drawable/dashboard">
+    </item>
+    <item android:id="@+id/Pending"
+          android:title="Pending"
+    android:icon="@drawable/pending">
+    </item>
+    <item android:id="@+id/Return"
+          android:title="Return"
+    android:icon="@drawable/exchange">
+    </item>
+    <item android:id="@+id/Commission"
+          android:title="Commission"
+    android:icon="@drawable/commission">
+    </item>
+
+</menu>
