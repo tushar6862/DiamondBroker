@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "165877489117",
+    "firebase_url": "https://diamond-broker-3ce98.firebaseio.com",
+    "project_id": "diamond-broker-3ce98",
+    "storage_bucket": "diamond-broker-3ce98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165877489117:android:035be30825610b75e62a34",
+        "android_client_info": {
+          "package_name": "com.example.diamondbroker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165877489117-p53m8lf39phtcjff7pkkmbdjo3ir0v2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diamondbroker",
+            "certificate_hash": "9982ddbc205d6a5b0f26234190ee66fc09e42962"
+          }
+        },
+        {
+          "client_id": "165877489117-p5lugl6gt3r7ga0hrvnd4al6mecltevh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwS4jVz7AHExj2jEbwSxcg_qWtiOTIdUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165877489117-p5lugl6gt3r7ga0hrvnd4al6mecltevh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
