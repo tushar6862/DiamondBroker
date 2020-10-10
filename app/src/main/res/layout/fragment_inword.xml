@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".Dashboard_F.Inword_F">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rv_inword"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                                                    />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:iconSize="32dp"
+                app:strokeWidth="4dp"
+                android:text="Add Inword"
+                android:id="@+id/fab_inword"
+                android:src="@drawable/add"
+                android:tint="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="24dp"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

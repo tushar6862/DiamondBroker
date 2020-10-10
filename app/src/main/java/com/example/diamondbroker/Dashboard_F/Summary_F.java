@@ -1,22 +1,22 @@
-package com.example.diamondbroker;
+package com.example.diamondbroker.Dashboard_F;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.example.diamondbroker.R;
 
-public class Dashboard_fragment extends Fragment {
+public class Summary_F extends Fragment {
 
-    public Dashboard_fragment() {
+    public Summary_F() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard, container, false);
+        return inflater.inflate(R.layout.fragment_summary, container, false);
     }
 }

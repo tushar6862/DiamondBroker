@@ -2,14 +2,25 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".Dashboard_fragment">
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".Navigation_F.Dashboard_fragment">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/dashboard_tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tabGravity="center"
+                app:tabTextColor="@color/black"
+                android:layout_centerHorizontal="true"
+        />
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_below="@id/dashboard_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        />
+    </RelativeLayout>
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Dashboard"/>
+
 
 </FrameLayout>

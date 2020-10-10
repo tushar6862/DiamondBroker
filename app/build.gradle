@@ -38,5 +38,6 @@ dependencies {
     implementation "com.android.support:design:${supportLibraryVersion}"
     implementation "com.android.support:recyclerview-v7:${supportLibraryVersion}"
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
 }
