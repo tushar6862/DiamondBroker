@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dashboard_F.Add_Inword">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addinword_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="New Outword"
+            android:background="@color/colorAccent"
+            app:titleTextColor="@color/white"
+            android:layout_gravity="right">
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+            android:layout_below="@id/addinword_toolbar"
+            android:layout_width="match_parent"
+            android:layout_above="@id/add_outword"
+            android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_margin="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:text="New Outword Info."
+                      android:textSize="20dp"
+                      android:textColor="@color/black"
+                      android:layout_margin="10dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/buyer_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/buyer_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Buyer Name"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/carat_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/carat_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Carat"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rate_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/rate_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Rate"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/discount_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/discount_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Discount (in %)"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/due_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/due_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Due Payment (in Days)"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/total_pay_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/total_pay_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Total Payment"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/commission_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/commission_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Commission (in %)"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/subtotal_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_margin="5dp">
+
+                <EditText
+                        android:id="@+id/subtotal_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Sub Total"
+                        android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                    android:id="@+id/loan_btn"
+                    android:layout_width="150dp" android:layout_height="wrap_content"
+                    android:text="Loan"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"
+            />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button android:id="@+id/add_outword"
+            android:layout_width="250dp" android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="24dp"
+            android:text="Add Outword"
+            android:background="@drawable/rounded_btn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+    />
+
+</RelativeLayout>

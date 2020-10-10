@@ -1,6 +1,7 @@
 package com.example.diamondbroker;
 
 import android.view.Menu;
+import android.view.ViewGroup;
 import android.widget.Toast;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import com.example.diamondbroker.Navigation_F.Commission_Fragment;
+import com.example.diamondbroker.Navigation_F.Dashboard_fragment;
+import com.example.diamondbroker.Navigation_F.Pending_Fragment;
+import com.example.diamondbroker.Navigation_F.Return_Fragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard_activity extends AppCompatActivity
@@ -96,10 +101,16 @@ public class Dashboard_activity extends AppCompatActivity
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fm.beginTransaction();
             fragmentTransaction.replace(R.id.frame_layout, fragment);
-            fragmentTransaction.commit(); // save the changes
+            fragmentTransaction.commit();
+            // save the changes
 
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
         }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

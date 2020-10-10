@@ -6,11 +6,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".splash_activity"
-        android:background="#2F3543"
+        android:background="@color/colorAccent"
 >
     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:src="@drawable/splash_diamond"
+    android:src="@drawable/splash_icon"
     android:layout_centerInParent="true"
-               android:scaleType="centerCrop"
-    android:background="#2F3543"/>
+               android:scaleType="centerInside"
+    android:background="@color/colorAccent"/>
 </RelativeLayout>
