@@ -35,9 +35,10 @@ public class Dashboard_fragment extends Fragment {
         View inflate = inflater.inflate(R.layout.fragment_dashboard, container, false);
         tabLayout = inflate.findViewById(R.id.dashboard_tabs);
         viewPager = inflate.findViewById(R.id.viewpager);
-        tabLayout.addTab(tabLayout.newTab().setText("Summary"));
+
         tabLayout.addTab(tabLayout.newTab().setText("Inword"));
         tabLayout.addTab(tabLayout.newTab().setText("Outword"));
+        tabLayout.addTab(tabLayout.newTab().setText("Summary"));
 
 
         final MyAdapter adapter = new MyAdapter(getContext(),getActivity().getSupportFragmentManager(), tabLayout.getTabCount());
@@ -82,13 +83,13 @@ public class Dashboard_fragment extends Fragment {
             switch (position)
             {
                 case 0:
-                    fragment = new Summary_F();
-                    break;
-                case 1:
                     fragment = new Inword_F();
                     break;
-                case 2:
+                case 1:
                     fragment = new Outword_F();
+                    break;
+                case 2:
+                    fragment = new Summary_F();
                     break;
             }
             return fragment;
